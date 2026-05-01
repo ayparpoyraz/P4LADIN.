@@ -1,16 +1,26 @@
 @import "tailwindcss";
 
 @layer base {
+  /* Reset */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
+  html,
+  body,
+  #svelte {
+    width: 100%;
+    height: 100%;
+  }
+
   body {
     min-height: 100vh;
-    /* Arka plan artık tüm uygulama için burada tanımlı */
-    background: radial-gradient(circle at center, #1a1a1a, #000) no-repeat fixed;
+    margin: 0;
+    padding: 0;
+
+    background: radial-gradient(circle at center, #1a1a1a, #292929) no-repeat fixed;
     color: #d6c28a;
     overflow-x: hidden;
   }

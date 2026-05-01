@@ -18,8 +18,8 @@
   ];
 
   let {
-    size = 22, // Biraz daha dengeli bir boyut
-    strokeWidth = 1.5, // Daha lüks bir görünüm için incelttim
+    size = 22, 
+    strokeWidth = 2.5, 
     color = "currentColor"
   } = $props();
 </script>
@@ -141,16 +141,16 @@
     transition: transform 0.3s ease;
   }
 
-  /* Dropdown Stilleri */
+
   .dropdown-container {
     position: absolute;
-    top: 80px; /* Navbar yüksekliği ile aynı */
+    top: 80px; 
     left: 50%;
     transform: translateX(-50%) translateY(15px);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 10px; /* Navbar ile menü arasında görünmez bir köprü */
+    padding-top: 10px;
   }
 
   .dropdown-menu {
