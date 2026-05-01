@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    min-height: 100vh;
+    /* Arka plan artık tüm uygulama için burada tanımlı */
+    background: radial-gradient(circle at center, #1a1a1a, #000) no-repeat fixed;
+    color: #d6c28a;
+    overflow-x: hidden;
+  }
+}

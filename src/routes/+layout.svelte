@@ -1,9 +1,27 @@
-<script>
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+<script lang="ts">
+  import '../app.css'
+  import Navbar from '$lib/components/Navbar.svelte';
 
-	let { children } = $props();
+  const { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
-{@render children()}
+<div class="layout">
+  <Navbar />
+
+  <main class="content">
+    {@render children()}
+  </main>
+</div>
+
+<style>
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;
+    padding: 2rem;
+  }
+</style>
